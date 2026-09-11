@@ -62,12 +62,11 @@ int main() {
   // initialize start and end nodes
   auto start_node = find_node(grid, 0, 0, 15);
   auto end_node = find_node(grid, 9, 14, 15);
-  assert(start_node && end_node && test &&
-         "find_node() failed on start_node, end_node, or test");
+  assert(start_node && end_node
+         "find_node() failed on start_node or end_node");
 
   std::cout << (*start_node)->x << ", " << (*start_node)->y << '\n';
-  std::cout << (*test)->x << ", " << (*test)->y << '\n';
-  std::cout << (*test)->x << ", " << (*test)->y << '\n';
+
 
   return 0;
 }
