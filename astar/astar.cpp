@@ -7,6 +7,7 @@
 #include <vector>
 #include <optional>
 #include <cmath>
+#include <algorithm>
 class node {
   public:
   std::optional<node *> parent;
