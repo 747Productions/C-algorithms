@@ -13,9 +13,9 @@ class node {
   std::optional<node *> parent;
   int x;
   int y;
-  float g_cost;
-  float h_cost;
-  float f_cost;
+  unsigned char g_cost;
+  unsigned char h_cost;
+  unsigned char f_cost;
   bool is_start;
   bool is_obstacle;
   node(int x, int y)
